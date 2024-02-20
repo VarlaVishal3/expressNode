@@ -99,10 +99,7 @@ const userLogin = async(req, res) =>{
         return res.status(500).json({ success: false, error: error.message });
       }
     console.log('Valid credentials');
-     /*return res.status(200).json({token: jwt.sign({ id: user._id, role: user.role }, process.env.secretKey, {
-          expiresIn: '1h',
-        })
-    })*/
+     
     
 
         
