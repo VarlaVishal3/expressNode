@@ -17,4 +17,6 @@ router.delete('/deleteUser', authenticate,authorize, userController.deleteUser);
 
 router.put('/updateUser', authenticate,authorize, userController.updateUser);
 
+router.get('/verifyOTP',userController.verifyOTP);
+
 module.exports = router;
